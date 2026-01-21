@@ -1,0 +1,232 @@
+Role:
+You are a senior full-stack engineer and product designer building a production-ready AI ed-tech web app.
+
+📘 App Name
+
+Flash Learn
+
+🎯 Core Goal
+
+Build a deploy-ready web application that allows users to upload large PDF study notes (up to 300 pages) and automatically converts them into:
+
+Topic-wise flashcards
+
+Adaptive quizzes
+
+Smart revision plans
+
+Progress & performance analytics
+
+The app should be optimized for students preparing for exams, interviews, and certifications.
+
+🧠 Key Features (Market-Improved)
+1. 📄 PDF Upload & Processing
+
+Upload PDFs up to 300 pages
+
+Handle scanned & text PDFs (use OCR fallback)
+
+Chunk content intelligently by:
+
+Headings
+
+Topics
+
+Semantic similarity
+
+Show processing progress (loading + ETA)
+
+2. 🧩 AI Content Generation
+
+For each topic:
+
+Generate flashcards:
+
+Front: concept/question
+
+Back: concise explanation + examples
+
+Generate MCQs & short-answer quizzes
+
+Difficulty levels:
+
+Easy
+
+Medium
+
+Hard
+
+Tag questions by topic & importance
+
+3. 🧠 Adaptive Learning (Modern Ed-Tech)
+
+Track:
+
+Accuracy
+
+Time spent
+
+Revisions
+
+Automatically:
+
+Increase question difficulty
+
+Re-surface weak topics (spaced repetition)
+
+Smart “Today’s Revision” dashboard
+
+4. 📊 Progress Tracking & Analytics
+
+Visual dashboards:
+
+Topic mastery %
+
+Strength vs weak areas
+
+Daily/weekly streaks
+
+Completion status per PDF
+
+Export progress summary as PDF
+
+5. 🗂 Flashcards System
+
+Swipe-based UI (mobile-first)
+
+Mark cards as:
+
+Easy
+
+Hard
+
+Revise later
+
+Auto-generated revision schedule
+
+6. 👤 User System
+
+Authentication:
+
+Email/password
+
+Google OAuth
+
+User dashboard with:
+
+Uploaded PDFs
+
+Saved flashcards
+
+Quiz history
+
+7. 🌐 Deployment & Performance
+
+Fully deploy-ready
+
+Optimized for:
+
+Large PDFs
+
+Concurrent users
+
+Environment variables for API keys
+
+Error handling + fallback UI
+
+🛠 Tech Stack (Replit-Friendly)
+Frontend
+
+React + TypeScript
+
+Tailwind CSS
+
+Responsive & mobile-first UI
+
+Backend
+
+Node.js + Express
+
+PDF parsing + chunking
+
+Background processing for large uploads
+
+AI Layer
+
+Use LLM APIs for:
+
+Summarization
+
+Flashcard generation
+
+Quiz creation
+
+Prompt chaining for accuracy
+
+Database
+
+PostgreSQL (or SQLite for MVP)
+
+Tables:
+
+Users
+
+Documents
+
+Topics
+
+Flashcards
+
+Quiz attempts
+
+Progress metrics
+
+🔐 Security & Limits
+
+File size & page limits
+
+Rate limiting for AI calls
+
+Secure file storage
+
+Input validation & sanitization
+
+✨ UI / UX Expectations
+
+Clean, distraction-free study UI
+
+Dark & light mode
+
+Smooth animations for flashcards
+
+Progress indicators everywhere
+
+📦 Deliverables
+
+Full source code
+
+Database schema
+
+.env.example
+
+README with:
+
+Setup steps
+
+Deployment guide
+
+Future improvements
+
+🚀 Extra (If Time Allows – Bonus)
+
+AI “Explain Like I’m 5” mode
+
+Voice-based flashcards
+
+Exam-mode timed quizzes
+
+Public shareable flashcard decks
+
+Final Instruction
+
+Build Flash Learn as a production-grade, scalable learning platform, not a demo. Prioritize clean architecture, readability, and real-world usability.

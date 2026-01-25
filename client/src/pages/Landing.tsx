@@ -110,7 +110,7 @@ export default function Landing() {
       {/* Footer */}
       <footer className="py-12 border-t border-border">
         <div className="container mx-auto px-4 text-center text-muted-foreground">
-          <p>© 2024 FlashLearn. Built with Replit.</p>
+          <p>© 2026  Built by Tanishk with curiosity (and a lot of coffee) </p>
         </div>
       </footer>
     </div>

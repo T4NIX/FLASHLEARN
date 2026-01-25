@@ -61,12 +61,21 @@ async function upsertUser(claims: any) {
 }
 
 export async function setupAuth(app: Express) {
-  app.set("trust proxy", 1);
+
+ if (
+    !process.env.REPLIT_CLIENT_ID ||
+    !process.env.REPLIT_CLIENT_SECRET
+  ) {
+    console.warn("Replit Auth disabled (env vars not set)");
+    return;
+  }
+ app.set("trust proxy", 1);
   app.use(getSession());
   app.use(passport.initialize());
   app.use(passport.session());
 
   const config = await getOidcConfig();
+
 
   const verify: VerifyFunction = async (
     tokens: client.TokenEndpointResponse & client.TokenEndpointResponseHelpers,

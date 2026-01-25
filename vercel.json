@@ -1,8 +1,15 @@
+
 {
   "rewrites": [
     {
       "source": "/api/:path*",
       "destination": "https://flashlearn-production.up.railway.app/api/:path*"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "https://flashlearn-production.up.railway.app/api/:path*"
     }
   ]
 }

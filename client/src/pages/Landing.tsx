@@ -17,7 +17,8 @@ export default function Landing() {
   };
 
   const goToLogin = () => {
-    window.location.href = "/api/login";
+   window.location.href = "https://flashlearn-production.up.railway.app/api/login";
+
   };
 
   return (
